@@ -4,17 +4,21 @@ html, body{
 }
 
 #content {
-    display: block;
+    display: flex;
     background-color: antiquewhite;
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .presentation{
-    background-color: aquamarine;
     width: 80vmin;
     height: 80vmin;
+    border: 3px solid grey;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
 .slide{
