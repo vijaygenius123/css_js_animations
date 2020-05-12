@@ -28,3 +28,16 @@ html, body{
     height: 80%;
     width: 80%;
 }
+
+.chooser{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.chooser *{
+    max-width: 20%;
+    margin: 5% 2.5%;
+}
