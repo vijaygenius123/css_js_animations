@@ -52,3 +52,11 @@ html, body{
 .presentation>.slide.active{
     display:inline-block;
 }
+
+.chooser>*.choosen{
+    max-width: 30%;
+}
+
+.chooser>*:not(.choosen){
+    max-width: 16%;
+}
