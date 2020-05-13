@@ -27,6 +27,8 @@ html, body{
     margin: 10%;
     height: 80%;
     width: 80%;
+    text-align: center;
+    font-size: 10vmin;
 }
 
 .chooser{
@@ -35,9 +37,18 @@ html, body{
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
+
 }
 
 .chooser *{
     max-width: 20%;
     margin: 5% 2.5%;
+}
+
+.presentation>.slide{
+    display:none;
+}
+
+.presentation>.slide.active{
+    display:inline-block;
 }
