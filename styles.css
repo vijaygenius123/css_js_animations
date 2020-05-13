@@ -43,6 +43,7 @@ html, body{
 .chooser *{
     max-width: 20%;
     margin: 5% 2.5%;
+    height: 20vmin;
 }
 
 .presentation>.slide{
@@ -55,8 +56,36 @@ html, body{
 
 .chooser>*.choosen{
     max-width: 30%;
+    animation-name:  choosen;
+    animation-duration: 2s;
+    animation-timing-function: ease;
 }
+
 
 .chooser>*:not(.choosen){
     max-width: 16%;
+    animation-name:  unchoosen;
+    animation-duration: 2s;
+    opacity: .25;
+    animation-timing-function: linear;
+}
+
+@keyframes choosen{
+    from {
+        max-width: 20%;
+    }
+    to{
+        max-width: 30%;
+    }
+}
+
+@keyframes unchoosen{
+    from {
+        max-width: 20%;
+        opacity: 1;
+    }
+    to{
+        max-width: 16%;
+        opacity: .25;
+    }
 }
